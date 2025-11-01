@@ -5,7 +5,7 @@ import type { Votes, VoteType } from "../../types/votes";
 
 import Voteoptions from "../VoteOptions/VoteOptions";
 import { useState } from "react";
-import VoteStatus from "../VoteStats/VoteStats";
+import VoteStats from "../VoteStats/VoteStats";
 
 export default function App() {
   const [clicks, setClicks] = useState<Votes>({
@@ -34,7 +34,7 @@ export default function App() {
           canReset={canReset}
         />
         {totalVotes > 0 && (
-          <VoteStatus
+          <VoteStats
             votes={clicks}
             totalVotes={totalVotes}
             positiveRate={positiveRate}

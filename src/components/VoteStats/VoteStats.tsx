@@ -1,11 +1,11 @@
 import type { Votes } from "../../types/votes";
-import css from "../VoteStatus/VoteStatus.module.css";
+import css from "../VoteStats/VoteStats.module.css";
 export interface VoteStatsProps {
   votes: Votes;
   totalVotes: number;
   positiveRate: number;
 }
-export default function VoteStatus({
+export default function VoteStats({
   votes,
   totalVotes = 0,
   positiveRate = 0,
