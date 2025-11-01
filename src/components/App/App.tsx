@@ -27,7 +27,7 @@ export default function App() {
     <>
       <div className={css.app}>
         <CafeInfo />
-        <Notification />
+
         <Voteoptions
           onVote={handleVote}
           onReset={resetVotes}
