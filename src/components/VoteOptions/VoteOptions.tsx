@@ -1,10 +1,5 @@
 import css from "../VoteOptions/VoteOptions.module.css";
-export type Votes = {
-  good: number;
-  neutral: number;
-  bad: number;
-};
-export type VoteType = "good" | "neutral" | "bad";
+import type { Votes, VoteType } from "../types/votes";
 export interface VoteOptionsProps {
   onVote: (type: VoteType) => void;
   onReset: () => void;
