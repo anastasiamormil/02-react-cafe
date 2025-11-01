@@ -7,12 +7,6 @@ import Voteoptions from "../VoteOptions/VoteOptions";
 import { useState } from "react";
 import VoteStatus from "../VoteStatus/VoteStatus";
 
-const votes: Votes = {
-  good: 0,
-  neutral: 0,
-  bad: 0,
-};
-
 export default function App() {
   const [clicks, setClicks] = useState<Votes>({
     good: 0,
