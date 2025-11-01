@@ -5,7 +5,7 @@ import type { Votes, VoteType } from "../../types/votes";
 
 import Voteoptions from "../VoteOptions/VoteOptions";
 import { useState } from "react";
-import VoteStatus from "../VoteStatus/VoteStatus";
+import VoteStatus from "../VoteStats/VoteStats";
 
 export default function App() {
   const [clicks, setClicks] = useState<Votes>({
